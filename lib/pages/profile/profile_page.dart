@@ -215,12 +215,37 @@ class _ProfilePageState extends State<ProfilePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               RowText(
-                icon: Icon(Icons.logout),
-                label: 'Keluar',
+                icon: ImageIcon(IconName.contactsLine),
+                label: 'Help & Support',
                 value: '',
                 valueColor: ColorName.primary,
                 onTap: () {},
               ),
+              RowText(
+                icon: ImageIcon(IconName.chatQuoteLine),
+                label: 'Contact Us',
+                value: '',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+              RowText(
+                icon: Icon(Icons.lock),
+                label: 'Privacy Policy',
+                value: '',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+              SizedBox(height: 12.0),
+              Center(
+                child: Text(
+                  'Version 1.0.0',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                    color: ColorName.primary,
+                  ),
+                ),
+              )
             ],
           ),
         )
