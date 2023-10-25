@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:flutter_siakad_app_windys/common/constants/colors.dart';
+import 'package:flutter_siakad_app_windys/common/constants/icons.dart';
 import 'package:flutter_siakad_app_windys/common/widgets/custom_scaffold.dart';
 import 'package:flutter_siakad_app_windys/common/widgets/row_text.dart';
 
@@ -125,9 +126,102 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ],
           ),
-          child: const Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [RowText(label: 'Edit Infomasi Profil', value: '')],
+            children: [
+              RowText(
+                icon: ImageIcon(IconName.profileLine),
+                label: 'Edit Infomasi Profil',
+                value: '',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+              RowText(
+                icon: Icon(Icons.notifications),
+                label: 'Notifikasi',
+                value: 'ON',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+              RowText(
+                icon: Icon(Icons.translate),
+                label: 'Bahasa ',
+                value: 'Indonesiaß',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              )
+            ],
+          ),
+        ),
+        const SizedBox(height: 24.0),
+        Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: 16.0,
+            vertical: 14.0,
+          ),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: ColorName.white,
+            boxShadow: [
+              BoxShadow(
+                color: ColorName.black.withOpacity(0.25),
+                offset: const Offset(0, 3),
+                spreadRadius: 0,
+                blurRadius: 4.0,
+                blurStyle: BlurStyle.outer,
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RowText(
+                icon: ImageIcon(IconName.projector2Line),
+                label: 'Keamanan',
+                value: '',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+              RowText(
+                icon: ImageIcon(IconName.mentalHealthLine),
+                label: 'Tema',
+                value: 'Mode Terang',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 24.0),
+        Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: 16.0,
+            vertical: 14.0,
+          ),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: ColorName.white,
+            boxShadow: [
+              BoxShadow(
+                color: ColorName.black.withOpacity(0.25),
+                offset: const Offset(0, 3),
+                spreadRadius: 0,
+                blurRadius: 4.0,
+                blurStyle: BlurStyle.outer,
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RowText(
+                icon: Icon(Icons.logout),
+                label: 'Keluar',
+                value: '',
+                valueColor: ColorName.primary,
+                onTap: () {},
+              ),
+            ],
           ),
         )
       ],
