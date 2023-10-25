@@ -125,12 +125,9 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ],
           ),
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              RowText(ic
-                label: 'Edit Infomasi Profil', value: '')
-            ],
+            children: [RowText(label: 'Edit Infomasi Profil', value: '')],
           ),
         )
       ],
